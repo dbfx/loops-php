@@ -16,6 +16,9 @@ class CustomField
     ) {
     }
 
+    /**
+     * @param array{key: string, label: string, type: 'boolean'|'date'|'number'|'string'} $attributes
+     */
     public static function from(array $attributes): CustomField
     {
         return new CustomField(
