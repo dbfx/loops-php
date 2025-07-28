@@ -6,8 +6,11 @@ includes:
 
 parameters:
   checkBenevolentUnionTypes: true
-  checkMissingIterableValueType: false
   level: max
+
+  ignoreErrors:
+    -
+        identifier: missingType.iterableValue
 
   paths:
     - src

@@ -6,6 +6,9 @@ namespace PlutoLinks\Loops\DataTransferObjects;
 
 class Contact
 {
+    /**
+     * @var list<string>
+     */
     public const DEFAULT_PROPERTIES = [
         'email',
         'firstName',

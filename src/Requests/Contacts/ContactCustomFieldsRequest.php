@@ -15,7 +15,7 @@ class ContactCustomFieldsRequest extends Request
 
     public function createDtoFromResponse(Response $response): array
     {
-        /** @var array<int, array{key: string, label: string, type: string}> $data */
+        /** @var array<int, array{key: string, label: string, type: 'boolean'|'date'|'number'|'string'}> $data */
         $data = $response->json();
 
         return array_map(fn (array $customField): CustomField => CustomField::from($customField), $data);
